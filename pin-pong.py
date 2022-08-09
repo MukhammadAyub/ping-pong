@@ -23,7 +23,7 @@ class GameSprite(sprite.Sprite):
         self.speed = speed
     def reset(self):
         w.blit(self.image,(self.rect.x, self.rect.y))
-
+#########################
 class Player(GameSprite):
     def update_l(self):
         pass
