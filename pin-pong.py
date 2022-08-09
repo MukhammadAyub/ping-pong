@@ -31,10 +31,16 @@ class Player(GameSprite):
         pass
 
 
+racket1 = Player('object3.png', 5, 200, 30, 60, 10)
+racket2 = Player('object4.png', 1150, 300, 30, 60, 10)
+ball = GameSprite('object5.png', 100, 300, 50, 50, 10)
 run = True
 finish = False
 while run:
     w.blit(bg, (0, 0))
+    racket1.reset()
+    racket2.reset()
+    ball.reset()
     for e in event.get():
         if e.type == QUIT:
             run = False
